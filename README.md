@@ -18,7 +18,7 @@ Currently only the following API methods are supported
 The following REST API is exposed
 
 - <code>GET /bucket/key</code> - Get a single document with key <code>key</code> from bucket <code>bucket</code>.
-- <code>GET /bucket?ids=key1,key2,key3</code> - Get multiple documents with keys <code>key1</code>, <code>key2</code>, <code>key3</code> from bucket <code>bucket</code>.
+- <code>GET /bucket?keys=key1,key2,key3</code> - Get multiple documents with keys <code>key1</code>, <code>key2</code>, <code>key3</code> from bucket <code>bucket</code>.
 - <code>POST /bucket/key</code> - Save a single document with key <code>key</code> in bucket <code>bucket</code>. The document is passed as the POST body. If the document exists, it is overwritten.
 - <code>POST /bucket/key?cas=1234567890</code> - Save a single document with key <code>key</code> in bucket <code>bucket</code>. The passed <code>cas</code> parameter contains a CAS value to be used when saving so concurrent modifications are detected.
 
